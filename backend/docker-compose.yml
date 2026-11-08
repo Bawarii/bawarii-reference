@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  reference-backend:
+    build: .
+    # Intentional: the container listens on 0.0.0.0 but the host mapping is
+    # loopback-only, so this sample is not reachable from the network.
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - ../.env
+    restart: unless-stopped

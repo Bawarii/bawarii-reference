@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: no-bawarii-api-keys
+        name: Block Bawarii API key prefixes
+        language: pygrep
+        # Matches bk_prod_ or bk_stg_ anywhere in staged files.
+        # Both production and staging key prefixes are blocked.
+        entry: "bk_prod_|bk_stg_"
+        types: [text]
+        stages: [commit]

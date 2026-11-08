@@ -1,0 +1,29 @@
+Bawarii Reference App
+Copyright 2026 Bawarii
+
+This product is licensed under the Apache License, Version 2.0. See the
+accompanying LICENSE file for the full license text.
+
+================================================================================
+Third-Party Notices
+================================================================================
+
+This reference app integrates the `bawarii_kyc` Flutter SDK, whose
+on-device liveness detector is derived from a third-party, Apache-2.0
+licensed model:
+
+--------------------------------------------------------------------------------
+Silent-Face-Anti-Spoofing
+--------------------------------------------------------------------------------
+Copyright 2020 Minivision
+
+Source:  https://github.com/minivision-ai/Silent-Face-Anti-Spoofing
+License: Apache License, Version 2.0
+         https://www.apache.org/licenses/LICENSE-2.0
+
+The model weights themselves are not committed to this repository (see
+.gitignore under app/assets/models/) — see the `bawarii_kyc` package's own
+NOTICE for the full model card.
+
+This NOTICE file is provided for informational purposes only and does not
+modify the License. See LICENSE §4(d).

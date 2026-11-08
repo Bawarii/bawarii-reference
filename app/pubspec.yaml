@@ -1,0 +1,30 @@
+name: bawarii_reference_app
+description: Reference integration sample for the Bawarii KYC SDK.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bawarii_kyc: ^0.1.0
+  bawarii_ui: ^0.1.0
+  dio: ^5.7.0
+  camera: ^0.10.6
+  uuid: ^4.4.0
+  # held <13 until the Flutter template moves to AGP 9 (13.x pulls permission_handler_android 14 = AGP 9 / Kotlin 2.3)
+  permission_handler: ^12.0.3
+  connectivity_plus: ^6.0.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true

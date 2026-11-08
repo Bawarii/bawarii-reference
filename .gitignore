@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+
+# Python
+*.pyc
+__pycache__/
+backend/.pytest_cache/
+backend/.venv/
+
+# Flutter / Dart
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/ios/Pods/
+app/android/.gradle/
+app/android/build/
+*.iml
+
+# Dev overrides — path depends on local sibling-checkout layout
+app/pubspec_overrides.yaml
+
+# macOS
+.DS_Store
+
+# Xcode build output
+app/ios/build/
